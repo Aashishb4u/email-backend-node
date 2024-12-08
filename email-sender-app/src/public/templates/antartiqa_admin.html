@@ -3,129 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Email Template</title>
     <style>
-        @font-face {
-            font-family: avenir next cyr;
-            font-style: normal;
-            font-weight: 400;
-            src: local('Avenir Next Cyr'), url(https://fonts.cdnfonts.com/s/14867/AvenirNextCyr-Regular.woff) format('woff')
-        }
+        @import url('https://fonts.cdnfonts.com/css/avenir');
 
-        @font-face {
-            font-family: avenir next cyr;
-            font-style: italic;
-            font-weight: 400;
-            src: local('Avenir Next Cyr'), url(https://fonts.cdnfonts.com/s/14867/AvenirNextCyr-Italic.woff) format('woff')
-        }
-
-        @font-face {
-            font-family: avenir next cyr;
-            font-style: normal;
-            font-weight: 700;
-            src: local('Avenir Next Cyr'), url(https://fonts.cdnfonts.com/s/14867/AvenirNextCyr-Demi.woff) format('woff')
-        }
-
-        @font-face {
-            font-family: avenir next cyr;
-            font-style: italic;
-            font-weight: 700;
-            src: local('Avenir Next Cyr'), url(https://fonts.cdnfonts.com/s/14867/AvenirNextCyr-DemiItalic.woff) format('woff')
-        }
-
-        @font-face {
-            font-family: avenir next cyr thin;
-            font-style: normal;
-            font-weight: 275;
-            src: local('Avenir Next Cyr Thin'), url(https://fonts.cdnfonts.com/s/14867/AvenirNextCyr-Thin.woff) format('woff')
-        }
-
-        @font-face {
-            font-family: avenir next cyr ultra light;
-            font-style: normal;
-            font-weight: 275;
-            src: local('Avenir Next Cyr Ultra Light'), url(https://fonts.cdnfonts.com/s/14867/AvenirNextCyr-UltraLight.woff) format('woff')
-        }
-
-        @font-face {
-            font-family: avenir next cyr thin;
-            font-style: italic;
-            font-weight: 275;
-            src: local('Avenir Next Cyr Thin'), url(https://fonts.cdnfonts.com/s/14867/AvenirNextCyr-ThinItalic.woff) format('woff')
-        }
-
-        @font-face {
-            font-family: avenir next cyr ultra light;
-            font-style: italic;
-            font-weight: 275;
-            src: local('Avenir Next Cyr Ultra Light'), url(https://fonts.cdnfonts.com/s/14867/AvenirNextCyr-UltraLightIt.woff) format('woff')
-        }
-
-        @font-face {
-            font-family: avenir next cyr light;
-            font-style: normal;
-            font-weight: 300;
-            src: local('Avenir Next Cyr Light'), url(https://fonts.cdnfonts.com/s/14867/AvenirNextCyr-Light.woff) format('woff')
-        }
-
-        @font-face {
-            font-family: avenir next cyr light;
-            font-style: italic;
-            font-weight: 300;
-            src: local('Avenir Next Cyr Light'), url(https://fonts.cdnfonts.com/s/14867/AvenirNextCyr-LightItalic.woff) format('woff')
-        }
-
-        @font-face {
-            font-family: avenir next cyr medium;
-            font-style: normal;
-            font-weight: 450;
-            src: local('Avenir Next Cyr Medium'), url(https://fonts.cdnfonts.com/s/14867/AvenirNextCyr-Medium.woff) format('woff')
-        }
-
-        @font-face {
-            font-family: avenir next cyr medium;
-            font-style: italic;
-            font-weight: 450;
-            src: local('Avenir Next Cyr Medium'), url(https://fonts.cdnfonts.com/s/14867/AvenirNextCyr-MediumItalic.woff) format('woff')
-        }
-
-        @font-face {
-            font-family: avenir next cyr medium;
-            font-style: normal;
-            font-weight: 750;
-            src: local('Avenir Next Cyr Medium'), url(https://fonts.cdnfonts.com/s/14867/AvenirNextCyr-Bold.woff) format('woff')
-        }
-
-        @font-face {
-            font-family: avenir next cyr medium;
-            font-style: italic;
-            font-weight: 750;
-            src: local('Avenir Next Cyr Medium'), url(https://fonts.cdnfonts.com/s/14867/AvenirNextCyr-BoldItalic.woff) format('woff')
-        }
-
-        @font-face {
-            font-family: avenir next cyr heavy;
-            font-style: normal;
-            font-weight: 800;
-            src: local('Avenir Next Cyr Heavy'), url(https://fonts.cdnfonts.com/s/14867/AvenirNextCyr-Heavy.woff) format('woff')
-        }
-
-        @font-face {
-            font-family: avenir next cyr heavy;
-            font-style: italic;
-            font-weight: 800;
-            src: local('Avenir Next Cyr Heavy'), url(https://fonts.cdnfonts.com/s/14867/AvenirNextCyr-HeavyItalic.woff) format('woff')
-        }
-
-        .font-montserrat {
-            font-family: Montserrat, sans-serif;
+        .email-font, p, div, td, span, h1, h2, h3, h4  {
+            font-family: 'Avenir', sans-serif;
         }
 
         body {
-            font-family: avenir next cyr, sans-serif !important;
+            font-family: 'Avenir', sans-serif;
             margin: 0;
             padding: 0;
             background: linear-gradient(146deg, #e834c4, #020c42 69%);
@@ -217,6 +108,9 @@
         }
 
         @media (max-width: 768px) {
+            .mail-container {
+                padding: 1rem 0;
+            }
             .header img {
                 width: 150px;
             }
@@ -274,20 +168,20 @@
 </head>
 
 <body>
-    <div class="mail-container">
-        <div class="email-container">
-            <div class="header">
+    <div class="email-font mail-container">
+        <div class="email-font email-container">
+            <div class="email-font header">
                 <img src="https://antartiqa.com/assets/images/logo.png" alt="">
             </div>
-            <div class="email-body">
+            <div class="email-font email-body">
                 <div style="text-align: right; font-size: 0.9rem; color: #888; margin-bottom: 20px;">
                     {{todaysDate}}
                 </div>
                 <!-- <h2 class="user-name">Hey Robert,</h2> -->
-                <p>
+                <p class="email-font">
                 <h2><strong>Hey AntartiQA Admin,</strong></h2>
                 </p>
-                <p>You have received a new message from your Antartiqa Website's contact section. Here are the details:
+                <p class="email-font">You have received a new message from your Antartiqa Website's contact section. Here are the details:
                 </p>
                 <h3>Contact Details</h3>
                 <table class="myTable" border="1" style="border-collapse: collapse; width: 100%;">
@@ -330,15 +224,15 @@
                 </table>
 
                 <h3>Message</h3>
-                <p>{{message}}</p>
+                <p class="email-font">{{message}}</p>
                 <br>
-                <p>Yours sincerely,</p>
-                <p>Talent Acquisition<br>
+                <p class="email-font">Yours sincerely,</p>
+                <p class="email-font">Talent Acquisition<br>
                     <strong>AntartiQA In Earth.</strong>
                 </p>
             </div>
-            <div class="footer">
-                <div class="social-icons">
+            <div class="email-font footer">
+                <div class="email-font social-icons">
                     <svg alt="LinkedIn" fill="#020c42" width="30px" role="img" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
                         <title>LinkedIn</title>
@@ -353,13 +247,13 @@
                             d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
                     </svg>
                 </div>
-                <p>
+                <p class="email-font">
                     For inquiries, reach out to us at <a
                         href="mailto:antartiqans@antartiqans.com">antartiqans@antartiqans.com</a>.
                 </p>
 
-                <p>1334, Sharjah, United Arab Emirates.</p>
-                <p>
+                <p class="email-font">1334, Sharjah, United Arab Emirates.</p>
+                <p class="email-font">
                     All rights reserved.
                 </p>
                 <!-- <p style="margin-top: 2rem;"><a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a></p> -->
