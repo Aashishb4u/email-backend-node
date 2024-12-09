@@ -112,7 +112,7 @@ const careerMailToUser = (userDetails) => {
 const contactMailToUser = (userDetails) => {
     let filePath = null;
     const {firstName, lastName, interestedIn} = userDetails;
-    filePath = path.join(__dirname, '..', 'public', 'templates', 'antartiqa_career.html');
+    filePath = path.join(__dirname, '..', 'public', 'templates', 'antartiqa_contact.html');
     return new Promise((resolve, reject) => {
         fs.readFile(filePath, 'utf8', (error, htmlContent) => {
             if (error) {
